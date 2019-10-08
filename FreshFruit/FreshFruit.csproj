@@ -63,12 +63,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="controller\BucketController.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\Bucket.cs" />
+    <Compile Include="model\BucketEventListener.cs" />
+    <Compile Include="model\Fruit.cs" />
+    <Compile Include="model\Seller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +98,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\anggur.jpg" />
+    <Resource Include="assets\apple.png" />
+    <Resource Include="assets\banana.jpg" />
+    <Resource Include="assets\orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="screenshot\Capture1.PNG" />
+    <Resource Include="screenshot\Capture2.PNG" />
+    <Resource Include="screenshot\Capture3.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
